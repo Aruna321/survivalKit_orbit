@@ -28,6 +28,11 @@
 /* species buttons */
 .bg_image {
     position: relative;
+
+}
+
+.background_top {
+
 }
 /*
 .species_one {
@@ -51,9 +56,29 @@
     left: 700px;
 }
 */
+
+
+
+
+.glow a {
+    /*display: inline-block;*/
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+    transform: translateZ(0px);
+    box-shadow: 0px 0px 1px transparent;
+  }
+
+.moon {
+  position: absolute;
+  top: 25px;
+  margin-left: 450px;
+  width: 200px;
+  height: 200px;
+}
+
 .species {
     position: absolute;
-    top: 100px;
+    top: 250px;
     bottom: 0px;
     margin-left: 150px;
 }
@@ -67,33 +92,60 @@
     background: url("http://placehold.it/200x200")  no-repeat;
   padding: 100px;
 
-  transition: background 1s;
+  /*transition: background 1s;*/
   
 }
 
 
 .species .vampire a {
-    background: url("../img/vampire_small.jpg");
-  
+    background: url("../img/vampire2.png");
+    background-size: 200px 210px;
 }
 
 .species .werewolf a {
-    background: url("../img/werewolf_small.png");
-  
+    background: url("../img/werewolf2.png");
+    background-size: 200px 218px;
 }
 
 .species .zombie a {
-    background: url("../img/zombie_small.jpg");
+    background: url("../img/zombie2.png");
+    background-size: 200px 220px;
   
 }
 
 /* test selection color */
 .species li a:hover {
-    background: red;
-
+    /*background: red;*/
+    -webkit-filter: blur(0px);
+    
 
     
 }
+
+.species li a {
+  -webkit-filter: blur(5px);
+
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.blur img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.blur img:hover {
+  -webkit-filter: blur(5px);
+}
+
+
+
 
 
 .lower-image {
@@ -103,14 +155,58 @@
   /*bottom: -450px;*/
 }
 
-.text_info {
-  margin-top: -500px;
-  margin-left: 30px;
-  padding-bottom: 200px;
-  color: white;
+.title_lower {
+  position: absolute;
+  color: #803343;
+  top: 10px;
+  left: 30px;
+  z-index: 1;
 }
 
+.text_info {
+  position: absolute;
+  margin-top: -1060px;
+  margin-left: 30px;
+  padding-bottom: 200px;
+  color: #803343;
+  font-size: 28px;
+  z-index: 1;
 
+  /*background-color: #5B7445;
+  padding-left: 5px;
+  padding-right: 2px;
+  -webkit-filter: blur(1px);*/
+
+}
+
+.text_bg {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  height: 720;
+  width: 20;
+  opacity: .9;
+  z-index: 0;
+  padding: 10px;
+  padding-right: -50px;
+  margin-right: 30px;
+  padding-bottom: 1000px;
+  -webkit-filter: blur(10px);
+}
+
+.slide_bg {
+  opacity: 0;
+}
+
+.species .Horde a {
+  position: absolute;
+  top: 230px;
+  left: 220px;
+  background: url("../img/Horde2.png");
+  background-size: 220px 220px;
+  padding-right: -60px;
+
+}
 
 /*
 
@@ -150,7 +246,20 @@
 */
 
 
+.backgrond_lower_main {
+  position: absolute;
+  margin-top: -1150px;
+  z-index: -1;
+}
 
+.attack_garlic {
+  position: absolute;
+  height: 210px;
+  width: 200px;
+  top: 50px;
+  left: 450px;
+  z-index: 1;
+}
 
 
 
